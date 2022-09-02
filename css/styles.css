@@ -106,15 +106,22 @@ button {
 }
 
 .links {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .link-item {
   color: white;
   font-size: 1.15rem;
   font-weight: bold;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  margin-right: 1rem;
+}
 
-  margin-bottom: 16px;
+.link-item:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
 }
 
 /* Main Title Styling */
@@ -162,7 +169,7 @@ button {
 }
 
 .info {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1;
   margin-bottom: 10px;
 }
@@ -211,6 +218,126 @@ button {
   margin-bottom: 90px;
 }
 
+.basic .package-header {
+  background-color: grey;
+}
+
+.pro .package-header {
+  background-color: #f44336;
+}
+
+.package-options {
+  width: 100%;
+}
+
+.package {
+  width: 100%;
+  text-align: center;
+
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+.package-header {
+  font-size: 1.5rem;
+  color: white;
+
+  padding: 1.75rem 0;
+}
+
+.package-features {
+}
+
+.feature {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.pricing {
+  margin-top: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.price {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.signup {
+}
+
+.signup-btn {
+  font-size: 1rem;
+  color: white;
+
+  border: none;
+  padding: 0.75rem 1.25rem;
+
+  margin: 1.5rem 0;
+}
+
+.basic .signup .signup-btn {
+  background-color: white;
+  color: black;
+}
+
+.pro .signup .signup-btn {
+  background-color: #f44336;
+}
+
+/* Contact Section */
+.contact {
+  margin-bottom: 90px;
+}
+
+.contact-form {
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  width: 100%;
+  font-size: 1.5rem;
+
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.message-btn {
+  width: 100%;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  font-size: 1rem;
+
+  padding: 1rem 0;
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.05);
+
+  padding: 3rem 0;
+}
+
+.footer h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+
+  text-align: right;
+  margin-right: 4rem;
+}
+
+h5 a {
+  color: black;
+}
+
 @media (min-width: 1000px) {
   /* Header Nav Styling */
 
@@ -234,15 +361,28 @@ button {
     top: 0;
     left: 300;
 
+    /* margin-left: 50px;
+    margin-right: 50px; */
+  }
+
+  .section {
     margin-left: 50px;
     margin-right: 50px;
   }
+
   /* Main Title Styling */
   .main-title {
     margin-top: 100px;
   }
 
   /* Showcase Section */
+
+  /* Packages Section */
+  .package-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 1000px) {
