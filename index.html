@@ -194,5 +194,26 @@
         </h5>
       </footer>
     </article>
+    <script>
+      // Show Side-bar on button click
+      const ham_btn = document.querySelector(".hamburger");
+      ham_btn.addEventListener("click", () => {
+        document.querySelector(".side-bar").style.display = "block";
+        document.querySelector(".nav").style.filter = "grayscale(20%)";
+        document.querySelector(".nav").style.filter = "opacity(20%)";
+        document.querySelector("article").style.filter = "grayscale(20%)";
+        document.querySelector("article").style.filter = "opacity(20%)";
+      });
+
+      // Hide Side-bar on close button click
+      const close_btn = document.querySelector(".close-btn");
+      close_btn.addEventListener("click", () => {
+        document.querySelector(".side-bar").style.display = "none";
+        document.querySelector(".nav").style.filter = "grayscale(100%)";
+        document.querySelector(".nav").style.filter = "opacity(100%)";
+        document.querySelector("article").style.filter = "grayscale(100%)";
+        document.querySelector("article").style.filter = "opacity(100%)";
+      });
+    </script>
   </body>
 </html>
